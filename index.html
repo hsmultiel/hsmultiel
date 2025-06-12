@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>H.S.Multiel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/flowbite.min.css?v=250404" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- GNB -->
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 shadow-lg"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="assets/hsm-logo-row.svg"
+            class="h-8 dark:hidden"
+            alt="Hsm Logo"
+          />
+          <img
+            src="assets/hsm-logo-row-text-white.svg"
+            class="h-8 hidden dark:block"
+            style="margin: 0"
+            alt="Hsm Logo"
+          />
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            onclick="window.open('https://saysueme.notion.site/12dff7fee55f80a3a199cb9b01eacbf0?pvs=105', '_blank')"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            문의하기
+            <svg
+              class="w-4 h-4 text-white inline"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+              />
+            </svg>
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="javascript:scrolltoSection('weAre');"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >We Are</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:scrolltoSection('works');"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Works</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:scrolltoSection('projects');"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:scrolltoSection('contact');"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <section
+      class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-600 bg-blend-multiply"
+      style="margin-top: 68px"
+    >
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1
+          class="mb-6 text-5xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <div
+            class="inline-block txt-gradient-hsm"
+            style="
+              padding: 4px 10px;
+              margin-right: -6px;
+              margin-bottom: 12px;
+              border-radius: 8px;
+            "
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <span class="text-transparent bg-clip-text" style="color: white"
+              >교육과 콘텐츠</span
+            >
+          </div>
+          의<br />&nbsp;새로운 가능성.
+        </h1>
+        <p
+          class="text-lg mb-8 font-normal text-gray-300 lg:text-xl"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          학점은행제 강의부터 유튜브 콘텐츠까지,
+          <span class="font-bold">H.S.Multiel</span>이 당신의 아이디어를
+          실현합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- We Are -->
+    <section class="bg-white dark:bg-gray-900" id="weAre">
+      <div
+        class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+      >
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+          <h1
+            class="mb-6 text-3xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl"
+          >
+            <span class="text-transparent bg-clip-text txt-gradient-hsm"
+              >We Are.</span
+            >
+          </h1>
+          <h2 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
+            우리는 교육 매체와<br />디지털 콘텐츠의 가능성을 넓혀갑니다.
+          </h2>
+          <p>
+            <span class="font-bold">H.S.Multiel</span>은 교육 기관과 비즈니스의
+            다양한 매체 개발과<br />콘텐츠 제작을 돕고 있습니다.<br />온라인
+            강의 콘텐츠부터 유튜브 제작까지 필요한 곳에 필요한
+            콘텐츠를 만듭니다.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <img
+            class="w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+            alt="office content 1"
+          />
+          <img
+            class="mt-4 w-full lg:mt-10 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+            alt="office content 2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="bg-gray-100 dark:bg-gray-900" id="works">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="max-w-screen-md mb-8 lg:mb-16">
+          <h1
+            class="mb-6 text-3xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl"
+          >
+            <span class="text-transparent bg-clip-text txt-gradient-hsm"
+              >Works.</span
+            >
+          </h1>
+          <h2
+            class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
+          >
+            우리는 이런 일을 합니다.
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            H.S.Multiel은 클라이언트의 필요에 맞춘 최적의 미디어 솔루션을
+            제공합니다.
+          </p>
+        </div>
+        <div class="space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full txt-gradient-hsm lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="#fff"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">
+              학점은행제 강의 개발
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              영상 촬영과 HTML 콘텐츠 개발을 통한 온라인 학습 매체 지원
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full txt-gradient-hsm lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="#fff"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">
+              대학교 콘텐츠 개발
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              대학교 특강 및 학과 소개 콘텐츠 제작
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full txt-gradient-hsm lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7Zm2 9.387 4.684 1.562A1 1 0 0 0 22 17V7a1 1 0 0 0-1.316-.949L16 7.613v8.774Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">
+              유튜브 라이브 방송
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              유튜브 라이브 방송을 위한 진행 지원
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full txt-gradient-hsm lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">
+              유튜브 콘텐츠 제작
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              촬영부터 편집까지 완성도 있는 유튜브 영상 제작
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="bg-white dark:bg-gray-900" id="projects">
+      <div class="pt-16 px-4 mx-auto max-w-screen-xl sm:pt-16 lg:pt-6">
+        <div class="max-w-screen-md">
+          <h1
+            class="mb-6 text-3xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl"
+          >
+            <span class="text-transparent bg-clip-text txt-gradient-hsm"
+              >Projects.</span
+            >
+          </h1>
+          <h2
+            class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
+          >
+            주요 프로젝트들을 소개합니다.
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            H.S.Multiel은 클라이언트의 필요에 맞춘 최적의 미디어 솔루션을
+            제공합니다.
+          </p>
+        </div>
+      </div>
+      
+      <div
+        dir="rtl"
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <img
+          class="rounded-xl shadow-lg"
+          src="assets/thumbnails/sh_thumb0.jpg"
+          alt="S대학교 원격평생교육원 매체 개발"
+        />
+        <div class="mt-4 md:mt-0">
+          <h2
+            class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
+          >
+            S대학교 원격평생교육원 매체 개발
+          </h2>
+          <p
+            class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+          >
+            S대학교 원격평생교육원의 원격 교육<br />맞춤형 교육
+            콘텐츠를 제작하여 학습자들이<br />보다 효율적으로 학습할 수 있도록
+            지원했습니다
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <img
+          class="rounded-xl shadow-lg"
+          src="assets/thumbnails/sh_thumb1.jpg"
+          alt="S대학교 콘텐츠 개발"
+        />
+        <div class="mt-4 md:mt-0">
+          <h2
+            class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
+          >
+            S대학교 콘텐츠 개발
+          </h2>
+          <p
+            class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+          >
+            S대학교 어학당 강의를 위한 콘텐츠를 촬영 및 개발하였습니다
+          </p>
+        </div>
+      </div>
+      <div
+        dir="rtl"
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <img
+          class="rounded-xl shadow-lg"
+          src="assets/thumbnails/yt_thumb.jpg"
+          alt="유튜브 콘텐츠 제작"
+        />
+        <div class="mt-4 md:mt-0">
+          <h2
+            class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
+          >
+            유튜브 콘텐츠 제작
+          </h2>
+          <p
+            class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400"
+          >
+            부동산 관련 정보 소개, 공인중개사 강의, 육아 예능 등의 유튜브 콘텐츠를 촬영 및 편집 제작하였습니다
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <div class="bg-white dark:bg-gray-900" id="contact">
+      <div class="py-8 px-4 mx-auto text-center sm:py-16 lg:px-6">
+        <div>
+          <h1
+            class="mb-6 text-3xl font-extrabold text-gray-900 text-white md:text-5xl lg:text-6xl"
+          >
+            <span class="text-transparent bg-clip-text txt-gradient-hsm"
+              >Contact Us.</span
+            >
+          </h1>
+          <h2
+            class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white"
+          >
+            H.S.Multiel과 함께하기
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            콘텐츠 제작, 대관 등 다양한 문의 사항에 대해 언제든지 연락
+            주세요.<br />H.S.Multiel팀이 함께하겠습니다.
+          </p>
+          <button
+            onclick="window.open('https://saysueme.notion.site/12dff7fee55f80a3a199cb9b01eacbf0?pvs=105', '_blank')"
+            type="button"
+            class="mt-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            문의하기
+            <svg
+              class="w-5 h-5 text-white inline"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#" class="flex items-center justify-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="assets/hsm-logo-row-white.svg"
+              class="h-8"
+              style="margin: 0"
+              alt="Hsm Logo"
+            />
+          </a>
+          <div class="text-gray-400 text-sm text-center mt-4 sm:text-right sm:mt-0">
+            <span class="block mb-3">
+              경기 남양주시 다산순환로 20 현대프리미어캠퍼스몰 A동 415호<br>
+              Tel. 010-6653-5210<br>
+              E-Mail. hsmultiel@gmail.com<br>
+              대표 박민애
+            </span>
+            <span class="block">
+              © 2019 H.S.Multiel. All Rights Reserved.
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/aos.js"></script>
+    <script src="js/flowbite.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
